@@ -1,0 +1,11 @@
+server:
+  port: ${vcap.application.port:8761}
+
+eureka:
+  instance: 
+    hostname: eureka-server-registry
+  client:
+    registerWithEureka: false
+    fetchRegistry: true
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
